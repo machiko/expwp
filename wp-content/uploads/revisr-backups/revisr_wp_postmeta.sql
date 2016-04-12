@@ -20,12 +20,12 @@ CREATE TABLE `wp_postmeta` (
   PRIMARY KEY (`meta_id`),
   KEY `post_id` (`post_id`),
   KEY `meta_key` (`meta_key`(191))
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 LOCK TABLES `wp_postmeta` WRITE;
 /*!40000 ALTER TABLE `wp_postmeta` DISABLE KEYS */;
-INSERT INTO `wp_postmeta` VALUES (1,2,'_wp_page_template','default');
+INSERT INTO `wp_postmeta` VALUES (1,2,'_wp_page_template','default'),(2,2,'_wp_trash_meta_status','publish'),(3,2,'_wp_trash_meta_time','1460454961'),(4,5,'_edit_last','1'),(5,5,'_edit_lock','1460455989:1'),(6,1,'_edit_lock','1460455944:1'),(7,1,'_edit_last','1'),(9,1,'_wp_trash_meta_status','publish'),(10,1,'_wp_trash_meta_time','1460455977'),(11,1,'_wp_trash_meta_comments_status','a:1:{i:1;s:1:\"1\";}');
 /*!40000 ALTER TABLE `wp_postmeta` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
