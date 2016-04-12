@@ -19,12 +19,12 @@ CREATE TABLE `wp_revisr` (
   `event` varchar(42) COLLATE utf8_unicode_ci NOT NULL,
   `user` varchar(60) COLLATE utf8_unicode_ci DEFAULT NULL,
   UNIQUE KEY `id` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 LOCK TABLES `wp_revisr` WRITE;
 /*!40000 ALTER TABLE `wp_revisr` DISABLE KEYS */;
-INSERT INTO `wp_revisr` VALUES (1,'2016-04-01 17:03:50','Successfully created a new repository.','init','reyes'),(2,'2016-04-01 17:04:31','Committed <a href=\"http://expwp.dev/wp-admin/admin.php?page=revisr_view_commit&commit=6b7a3ed&success=true\">#6b7a3ed</a> to the local repository.','commit','reyes'),(3,'2016-04-01 17:05:05','Error pushing changes to the remote repository.','error','reyes');
+INSERT INTO `wp_revisr` VALUES (1,'2016-04-01 17:03:50','Successfully created a new repository.','init','reyes'),(2,'2016-04-01 17:04:31','Committed <a href=\"http://expwp.dev/wp-admin/admin.php?page=revisr_view_commit&commit=6b7a3ed&success=true\">#6b7a3ed</a> to the local repository.','commit','reyes'),(3,'2016-04-01 17:05:05','Error pushing changes to the remote repository.','error','reyes'),(4,'2016-04-01 17:05:30','Successfully backed up the database.','backup','reyes'),(5,'2016-04-01 17:11:27','Successfully pushed 2 commits to machiko/master.','push','reyes'),(6,'2016-04-12 18:07:59','Error pulling changes from the remote repository.','error','reyes'),(7,'2016-04-12 18:09:22','Discarded all uncommitted changes.','discard','reyes'),(8,'2016-04-12 18:11:00','Discarded all uncommitted changes.','discard','reyes'),(9,'2016-04-12 18:11:19','Pulled <a href=\"http://expwp.dev/wp-admin/admin.php?page=revisr_view_commit&commit=734bc9a\">#734bc9a</a> from machiko/master.','pull','reyes'),(10,'2016-04-12 18:11:19','Pulled <a href=\"http://expwp.dev/wp-admin/admin.php?page=revisr_view_commit&commit=04b312c\">#04b312c</a> from machiko/master.','pull','reyes'),(11,'2016-04-12 18:11:19','Pulled <a href=\"http://expwp.dev/wp-admin/admin.php?page=revisr_view_commit&commit=750bc46\">#750bc46</a> from machiko/master.','pull','reyes');
 /*!40000 ALTER TABLE `wp_revisr` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
