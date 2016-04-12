@@ -39,7 +39,7 @@ CREATE TABLE `wp_comments` (
 
 LOCK TABLES `wp_comments` WRITE;
 /*!40000 ALTER TABLE `wp_comments` DISABLE KEYS */;
-INSERT INTO `wp_comments` VALUES (1,1,'WordPress 桑','','https://wordpress.org/','','2016-04-07 23:30:33','2016-04-07 15:30:33','嗨！這是一則迴響。\n要刪除迴響，請登入後瀏覽文章的迴響，那兒你可以選擇編輯或刪除它們。',0,'post-trashed','','',0,0);
+INSERT INTO `wp_comments` VALUES (1,1,'WordPress 桑','','https://wordpress.org/','','2016-04-01 17:02:38','2016-04-01 09:02:38','嗨！這是一則迴響。\n要刪除迴響，請登入後瀏覽文章的迴響，那兒你可以選擇編輯或刪除它們。',0,'1','','',0,0);
 /*!40000 ALTER TABLE `wp_comments` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

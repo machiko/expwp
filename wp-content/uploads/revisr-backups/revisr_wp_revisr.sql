@@ -15,16 +15,16 @@ DROP TABLE IF EXISTS `wp_revisr`;
 CREATE TABLE `wp_revisr` (
   `id` mediumint(9) NOT NULL AUTO_INCREMENT,
   `time` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
-  `message` text,
-  `event` varchar(42) NOT NULL,
-  `user` varchar(60) DEFAULT NULL,
+  `message` text COLLATE utf8_unicode_ci,
+  `event` varchar(42) COLLATE utf8_unicode_ci NOT NULL,
+  `user` varchar(60) COLLATE utf8_unicode_ci DEFAULT NULL,
   UNIQUE KEY `id` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 LOCK TABLES `wp_revisr` WRITE;
 /*!40000 ALTER TABLE `wp_revisr` DISABLE KEYS */;
-INSERT INTO `wp_revisr` VALUES (1,'2016-04-08 00:32:35','Successfully created a new repository.','init','reyes'),(2,'2016-04-08 00:33:32','Error pulling changes from the remote repository.','error','reyes'),(3,'2016-04-08 00:34:10','Committed <a href=\"http://128.199.219.25/wp-admin/admin.php?page=revisr_view_commit&commit=750bc46&success=true\">#750bc46</a> to the local repository.','commit','reyes'),(4,'2016-04-08 00:34:28','Pulled <a href=\"http://128.199.219.25/wp-admin/admin.php?page=revisr_view_commit&commit=91ae9b0\">#91ae9b0</a> from origin/master.','pull','reyes'),(5,'2016-04-08 00:34:28','Pulled <a href=\"http://128.199.219.25/wp-admin/admin.php?page=revisr_view_commit&commit=6b7a3ed\">#6b7a3ed</a> from origin/master.','pull','reyes'),(6,'2016-04-08 00:34:40','Successfully pushed 2 commits to origin/master.','push','reyes'),(7,'2016-04-12 17:54:37','There was an error committing the changes to the local repository.','error','reyes'),(8,'2016-04-12 17:54:55','Committed <a href=\"http://128.199.219.25/wp-admin/admin.php?page=revisr_view_commit&commit=734bc9a&success=true\">#734bc9a</a> to the local repository.','commit','reyes'),(9,'2016-04-12 17:55:12','Successfully pushed 1 commit to origin/master.','push','reyes');
+INSERT INTO `wp_revisr` VALUES (1,'2016-04-01 17:03:50','Successfully created a new repository.','init','reyes'),(2,'2016-04-01 17:04:31','Committed <a href=\"http://expwp.dev/wp-admin/admin.php?page=revisr_view_commit&commit=6b7a3ed&success=true\">#6b7a3ed</a> to the local repository.','commit','reyes'),(3,'2016-04-01 17:05:05','Error pushing changes to the remote repository.','error','reyes'),(4,'2016-04-01 17:05:30','Successfully backed up the database.','backup','reyes'),(5,'2016-04-01 17:11:27','Successfully pushed 2 commits to machiko/master.','push','reyes'),(6,'2016-04-12 18:07:59','Error pulling changes from the remote repository.','error','reyes'),(7,'2016-04-12 18:09:22','Discarded all uncommitted changes.','discard','reyes'),(8,'2016-04-12 18:11:00','Discarded all uncommitted changes.','discard','reyes'),(9,'2016-04-12 18:11:19','Pulled <a href=\"http://expwp.dev/wp-admin/admin.php?page=revisr_view_commit&commit=734bc9a\">#734bc9a</a> from machiko/master.','pull','reyes'),(10,'2016-04-12 18:11:19','Pulled <a href=\"http://expwp.dev/wp-admin/admin.php?page=revisr_view_commit&commit=04b312c\">#04b312c</a> from machiko/master.','pull','reyes'),(11,'2016-04-12 18:11:19','Pulled <a href=\"http://expwp.dev/wp-admin/admin.php?page=revisr_view_commit&commit=750bc46\">#750bc46</a> from machiko/master.','pull','reyes'),(12,'2016-04-12 18:14:02','Successfully backed up the database.','backup','reyes'),(13,'2016-04-12 18:28:48','Committed <a href=\"http://expwp.dev/wp-admin/admin.php?page=revisr_view_commit&commit=39e99d2&success=true\">#39e99d2</a> to the local repository.','commit','reyes'),(14,'2016-04-12 18:28:50','Error pushing changes to the remote repository.','error','reyes');
 /*!40000 ALTER TABLE `wp_revisr` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
